@@ -115,7 +115,7 @@ EXPOSE 5000
 USER bentoml
 RUN chmod +x ./docker-entrypoint.sh
 ENTRYPOINT [ "./docker-entrypoint.sh" ]
-CMD ["bentoml", "serve-gunicorn", "--timeout 900", "./"]
+CMD ["bentoml", "serve-gunicorn", "--timeout", "900", "./"]
 """  # noqa: E501
 
 INIT_PY_TEMPLATE = """\
